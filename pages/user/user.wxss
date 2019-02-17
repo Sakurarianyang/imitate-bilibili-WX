@@ -1,0 +1,15 @@
+.dengshan{
+  width: 100%; 
+  height: 300rpx;
+}
+.bthlogin{
+  background-color: #fb7299;
+  color: #ffffff;
+  margin-top: 120rpx; 
+  width: 90%;
+}
+.bthregister{
+  margin-top: 15rpx; 
+  width: 90%;
+  color: #fb7299;
+}

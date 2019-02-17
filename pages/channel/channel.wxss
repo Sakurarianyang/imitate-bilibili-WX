@@ -1,0 +1,17 @@
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30rpx;
+}
+.flexbox .channel_options{
+  margin: 40rpx;
+  text-align: center;
+}
+.flexbox .channel_options .channel_img{
+  width: 70rpx;
+  height: 70rpx;
+}
+.flexbox .channel_options .channel_title{
+  font-size: 24rpx;
+}

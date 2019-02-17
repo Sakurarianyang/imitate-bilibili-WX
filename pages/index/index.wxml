@@ -1,0 +1,20 @@
+<view class='header'>
+  <image class='logo' src='{{logoimg}}'></image>
+  <view class='search' bindtap="onSearch">
+    <image class='search_logo' src='/images/sousuo.png'></image>
+  </view> 
+  <image class='header_img' src='/images/avatar.png'></image>
+</view>
+<swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="rgba(255,255,255,1)" indicator-active-color="#fb7299">
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='listflexbox'>
+  <view class='listbox' wx:for="{{itemlist}}" wx:key="item.aid">
+    <image class='listimg' src='{{item.pic}}'></image>
+    <view class='listtext'>{{item.title}}</view>
+  </view>
+</view>

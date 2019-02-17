@@ -1,0 +1,5 @@
+<view>
+<image class="dengshan" src='http://s1.hdslb.com/bfs/static/mult/images/bannerTop.png'></image>
+  <button class='bthlogin'>登录</button>
+  <button class='bthregister'>注册</button> 
+</view>

@@ -1,0 +1,24 @@
+<view>
+  <view class="search">
+    <input placeholder=" 搜索视频、番剧、UP主或AV号" auto-focus class='searchkuang' confirm-type="search" cursor="3"/>
+    <view class='cancel' bindtap='oncancel'>取消</view>
+  </view>
+  <view class='ebsearch'>
+      <text class='ebtext'>大家都在搜</text>
+      <view class='ebsearchdiv'>
+        <block wx:for="{{EbSearch}}" wx:key="index" data-index="{{index}}">
+          <div class="ebsearchitem" data-item="{{item}}" bindtap='onbtnsh'>{{item}}</div>
+        </block>
+      </view>
+  </view>
+</view>
+<view class='historysearch'>
+  <text class='ebtext'>历史搜索</text>
+  <block wx:for="{{HSearch}}" wx:key="in2dex">
+    <view class='hsearchdiv'>
+        <text class='iconfont icon-shijian' style='color:#7F8389;font-size:32rpx;margin-right:5rpx;'></text>
+        <div class="hsearchitem">{{item}}</div>
+    </view>
+   </block>
+   <view class='btnempty' bindtap='onempty' wx:if="{{HSearch.length !== 0}}">清空历史记录</view>
+</view>

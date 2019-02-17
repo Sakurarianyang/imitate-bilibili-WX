@@ -1,0 +1,78 @@
+@import "/css/icon.wxss";
+.search{
+  margin-top: 15rpx;
+  display: flex;
+  justify-content: center;
+}
+.search .searchkuang{
+  background-color:#f4f4f4;
+  border: 1rpx solid #e7e7e7;
+  border-radius: 15rpx; 
+  font-size: 30rpx;
+  line-height: 1.1rpx;
+  vertical-align: middle;
+  width: 560rpx;
+  height: 80rpx;
+}
+.search .cancel{
+  margin-left:40rpx;
+  height: 80rpx;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 80rpx;
+  vertical-align: middle;
+  color: #fb7299;
+}
+.ebsearch{
+  position: relative;
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  margin-right: 13rpx;
+}
+.ebsearch .ebtext{
+  font-size: 30rpx;
+  color: #999999; 
+}
+.ebsearch .ebsearchdiv{
+  margin-top: 10rpx;
+}
+.ebsearch .ebsearchdiv .ebsearchitem{
+  border: 1rpx #cfcfcf solid;
+  margin-top: 25rpx;
+  margin-right: 14rpx;
+  display: inline-block;
+  border-radius: 25rpx; 
+  padding: 10rpx;
+  color: #505050;
+  font-size: 16px;
+}
+.historysearch{
+  margin-top:50rpx;
+  padding: 30rpx;
+  border-top: 25rpx #e7e7e7 solid;
+}
+.historysearch .ebtext{
+  font-size: 30rpx;
+  color: #999999; 
+  margin-bottom: 25rpx;
+  display: block;
+}
+.historysearch .hsearchdiv{
+  display: block;
+  margin-top:20rpx; 
+  border-bottom:1rpx #e5e5e5 solid; 
+  padding-bottom:15rpx; 
+}
+.historysearch .hsearchdiv .hsearchitem{
+  margin-left:10rpx;
+  line-height: 0.1rpx; 
+  font-size: 14px;
+  color: #999999;
+  display: inline-block;
+}
+.historysearch .btnempty{
+  font-size: 18px;
+  color: #999999;
+  margin-top:60rpx;
+  text-align: center; 
+}

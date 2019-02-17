@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/inchannel/inchannel",
+    "pages/channel/channel",
+    "pages/search/search",
+    "pages/user/user"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fb7299",
+    "navigationBarTitleText": "哔哩哔哩 BiliBili",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color": "#666666",
+    "selectedColor": "#fb7299",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"images/icon/index.png",
+        "selectedIconPath":"images/icon/s-index.png"
+      },
+      {
+        "pagePath": "pages/channel/channel",
+        "text": "频道",
+        "iconPath": "images/icon/movies.png",
+        "selectedIconPath": "images/icon/s-movies.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/icon/user.png",
+        "selectedIconPath": "images/icon/s-user.png"
+      }
+    ]
+  },
+  "debug":false
+}

@@ -1,0 +1,8 @@
+<view class='flexbox'>
+  <block wx:for="{{ChannelLogo}}" wx:key="index">
+  <view bindtap="into_ch" data-channel="{{item.title}}" class='channel_options'>
+      <image class='channel_img' src='{{item.ImgUrl}}'></image>
+      <view class='channel_title'>{{item.title}}</view>
+  </view>
+  </block>
+</view>
