@@ -42,10 +42,10 @@ Page({
         this.animation();
         break;
       case '番剧':
-        this.animation_drama_series();
+        this.onerror();
         break;
       case '国创':
-        this.chinese_creation();
+        this.onerror();
         break;
       case '音乐':
         this.onmusic();
@@ -214,10 +214,29 @@ Page({
   onmusic: function () {
     this.setData({
       navlist: [
-        { 'title': '原创音乐' },
+        { 'title': '原创音乐', 'new': [
+          {
+            "aid": "1",
+            "author": "Mes",
+            "pic": "http://i1.hdslb.com/bfs/archive/00c0db3a35d4a61eff5b6e76a345c0f2e50da4ab.jpg",
+            "play": 1896477,
+            "pts": 4721560,
+            "title": "流光乐夜【2019拜年祭单品】",
+            'description': '三无：“今年我依然是个可爱的女孩子呢！！” 泠鸢yousa:"回家过年段子里应付尬聊的方法可千万别用啊！不过有一个我觉得好使，亲戚要求表演节目你可以唱…改革春风吹满地，吹满地春风吹满地！" hoshino: “毫无经验的小白瑟瑟发抖的跟大家说春节快乐！！” 岚aya: “祝所有本命年的猪猪们一切顺利?”冥月:“灯红酒绿一起摇摆有东西扯我……”Mes: “猪你新年快乐！”',
+          }, {
+            "aid": "2",
+            "author": "litterzy",
+            "pic": "http://i0.hdslb.com/bfs/archive/3fdffe89a861cf9aca28727e5ab7f0bcf5b418db.jpg",
+            "play": 1530697,
+            "pts": 3090164,
+            "title": "冠世一战【2019拜年祭单品】",
+            'description': '大闹一场，冠世一战； 悄然离去，后世相传。'
+          }
+        ] 
+      },
         { 'title': '翻唱' },
         { 'title': 'VOCALOID UTAU' },
-        { 'title': '电音' },
+        { 'title': '电音'},
         { 'title': '演奏' },
         { 'title': 'MV' },
         { 'title': '音乐现场' },
@@ -243,5 +262,14 @@ Page({
         })
       }
     })
-  }
+  },
+  tovideo: function (e) {
+    var videoobj = e.currentTarget.dataset.video;
+    wx.navigateTo({
+      url: '/pages/video/video?aid=' + videoobj.aid + '&title=' + videoobj.title + '&author=' +
+        videoobj.author + '&author=' +
+        videoobj.author + '&play=' +
+        videoobj.play + '&description=' + videoobj.description + ""
+    })
+  },
 })

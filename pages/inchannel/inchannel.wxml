@@ -9,7 +9,7 @@
         <swiper-item wx:for="{{navlist}}" wx:for-item="tabItem" wx:for-index="idx" wx:key="idx" class="tab-content">
           <view class='headline'>热门推荐</view>
           <view class='listflexbox'>
-            <view class='listbox' wx:for="{{navlist[idx].new}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+            <view class='listbox' wx:for="{{navlist[idx].new}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx" bindtap='tovideo' data-video="{{navItem}}">
               <image class='listimg' src='{{navItem.pic}}'></image>
               <view class='listtext'>{{navItem.title}}</view>
             </view>

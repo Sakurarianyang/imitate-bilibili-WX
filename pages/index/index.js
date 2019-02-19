@@ -22,11 +22,13 @@ Page({
           "title": "【哔哩哔哩2019拜年祭】",
         },
         {
-          "aid": "42466533",
-          "pic": "http://i0.hdslb.com/bfs/archive/019724cb8bfcd7f1e7c61906233e4a8a16b3680a.jpg",
+          "aid": "1",
+          "author":"Mes",
+          "pic": "http://i1.hdslb.com/bfs/archive/00c0db3a35d4a61eff5b6e76a345c0f2e50da4ab.jpg",
           "play": 1896477,
           "pts": 4721560,
-          "title": "喜羊羊是一部怎样的动画？巅峰时期的喜羊羊与灰太狼有多强",
+          "title": "流光乐夜【2019拜年祭单品】",
+          'description': '三无：“今年我依然是个可爱的女孩子呢！！” 泠鸢yousa:"回家过年段子里应付尬聊的方法可千万别用啊！不过有一个我觉得好使，亲戚要求表演节目你可以唱…改革春风吹满地，吹满地春风吹满地！" hoshino: “毫无经验的小白瑟瑟发抖的跟大家说春节快乐！！” 岚aya: “祝所有本命年的猪猪们一切顺利?”冥月:“灯红酒绿一起摇摆有东西扯我……”Mes: “猪你新年快乐！”',
         },
         {
           "aid": "42184601",
@@ -36,11 +38,13 @@ Page({
           "title": "【老番茄】史上最狠小学生(第四期)",
         },
         {
-          "aid": "36570568",
+          "aid": "2",
+          "author": "litterzy",
           "pic": "http://i0.hdslb.com/bfs/archive/3fdffe89a861cf9aca28727e5ab7f0bcf5b418db.jpg",
           "play": 1530697,
           "pts": 3090164,
           "title": "冠世一战【2019拜年祭单品】",
+          'description': '大闹一场，冠世一战； 悄然离去，后世相传。'
         },
         {
           "aid": "36570650",
@@ -65,6 +69,7 @@ Page({
         },
         {
           "aid": "36570707", 
+          'author':'',
           "pic": "http://i0.hdslb.com/bfs/archive/2c28ad5b1f166d648e820a68eac80b5fe88d324e.jpg",
           "play": 657780,
           "pts": 1744175,
@@ -113,5 +118,14 @@ Page({
     this.setData({
       duration: e.detail.value
     })
-  }
+  },
+  tovideo: function (e) {
+    var videoobj = e.currentTarget.dataset.video;
+    wx.navigateTo({
+      url: '/pages/video/video?aid=' + videoobj.aid + '&title=' + videoobj.title + '&author=' +
+        videoobj.author + '&author=' +
+        videoobj.author + '&play=' +
+        videoobj.play + '&description=' + videoobj.description + ""
+    })
+  },
 })

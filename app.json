@@ -1,10 +1,14 @@
 {
   "pages":[
+    
     "pages/index/index",
+    "pages/video/video",
+    
     "pages/inchannel/inchannel",
     "pages/channel/channel",
     "pages/search/search",
     "pages/user/user"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",

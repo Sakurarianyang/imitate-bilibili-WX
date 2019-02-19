@@ -56,6 +56,7 @@
   width: 350rpx;
   height: 225rpx;
   border-radius: 15rpx;
+  box-shadow:0 0 10rpx #000 inset;
 }
 .listflexbox .listbox .listtext{
   text-align: center;

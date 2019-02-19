@@ -1,0 +1,21 @@
+<wxs module="filter" src="../../utils/public.wxs"></wxs>
+<view class="page-body">
+  <view class="page-section tc">
+    <video id="myVideo" src="{{information.aid}}.mp4" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+    <view class='danmuiput'><input bindblur="bindInputBlur" class="weui-input" value='{{inputValue}}' type="text" placeholder="看谁在此饶舌" /></view>
+    <view class="btn-area">
+      <button bindtap="bindSendDanmu" class="page-body-app" formType="submit" >(｀・ω・´)发弹幕</button>
+    </view>
+  </view>
+  <view class='information'>
+      <view class='information_title'>{{information.title}} </view>
+      <view class='information_author'>{{information.author}} <text class='play'>{{filter.numberToFix(information.play/10000)}}次观看               </text><text class='play'>{{danmuList.length}}弹幕</text></view>
+      <view class='information_description'>{{information.description}}</view>
+  </view>
+  <view class='gongneng'>
+    <view class='gn-btn' bindtap='gn_btn' data-btn='shoucang'><text class='iconfont icon-shoucang' style='color:#7F8389;font-size:32rpx;margin-right:5rpx;'></text>收藏</view>
+    <view class='gn-btn' bindtap='gn_btn' data-btn='xiazai'><text class='iconfont icon-xiazai' style='color:#7F8389;font-size:32rpx;margin-right:5rpx;'></text>下载</view>
+    <button class='gn-fenxiang' open-type='share' data-btn='fenxiang'><text class='iconfont icon-iconfontfenxiang' style='color:#7F8389;font-size:32rpx;margin-right:5rpx;'></text>分享</button>
+  </view>
+</view>
+

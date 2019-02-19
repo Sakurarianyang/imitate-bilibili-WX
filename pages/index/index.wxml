@@ -9,11 +9,11 @@
   <block wx:for="{{imgUrls}}" wx:key="index">
     <swiper-item>
       <image src="{{item}}" class="slide-image"/>
-    </swiper-item>
+    </swiper-item>  
   </block>
 </swiper>
 <view class='listflexbox'>
-  <view class='listbox' wx:for="{{itemlist}}" wx:key="item.aid">
+  <view class='listbox' wx:for="{{itemlist}}" wx:key="item.aid" bindtap='tovideo' data-video="{{item}}">
     <image class='listimg' src='{{item.pic}}'></image>
     <view class='listtext'>{{item.title}}</view>
   </view>
