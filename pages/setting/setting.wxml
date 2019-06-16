@@ -1,0 +1,10 @@
+<!--pages/setting/setting.wxml-->
+<view class='cell-box'>
+  <view class='cell'><text class='facetilte'>头像</text><image class='userface' src='{{userInfo.avatarUrl}}'></image></view>
+  <view class='cell'><text>昵称</text><text style='color:#999'>{{userInfo.nickName}}</text></view>
+  <view class='cell'><text>性别</text><text style='color:#999'>{{gender[userInfo.gender]}}</text></view>
+  <view class='cell cell-bottom'><text>登录方式</text><text style='color:#999'>微信</text></view>
+</view>
+<view class='btn-div'>
+    <button bindtap="logOut">退出登录</button>
+</view>

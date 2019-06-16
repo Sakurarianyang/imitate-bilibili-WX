@@ -5,14 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    userInfo:{},
+    btnList:[{btnName:'历史记录'},{btnName:'我的投稿'}],
+    btnidex:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let that = this;
+    wx.getStorage({
+      key: 'userInfo',
+      success: function (res) {
+        console.log(res.data)
+        that.setData({
+          userInfo: res.data
+        })
+      }
+    })
   },
 
   /**
@@ -28,39 +39,25 @@ Page({
   onShow: function () {
 
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  onGotUserInfo(e){
+    console.log(e.detail.userInfo);
+    this.setData({
+      userInfo: e.detail.userInfo 
+    })
+    wx.setStorage({
+      key:'userinfo',
+      data: e.detail.userInfo
+    });
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  ontabbtn(e){
+    var btn = e.currentTarget.dataset.btn;
+    this.setData({
+      btnidex:btn
+    })
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  accountInfo(){
+    wx.navigateTo({
+      url: '/pages/setting/setting'
+    })
   }
 })

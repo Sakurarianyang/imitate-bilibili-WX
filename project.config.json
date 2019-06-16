@@ -13,8 +13,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "",
-	"projectname": "fangbilibili",
+	"appid": "wx0a8769229c2007c5",
+	"projectname": "imitate-bilibili-WX",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

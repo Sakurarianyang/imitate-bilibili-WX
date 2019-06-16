@@ -1,5 +1,26 @@
 <view>
 <image class="dengshan" src='http://s1.hdslb.com/bfs/static/mult/images/bannerTop.png'></image>
-  <button class='bthlogin'>登录</button>
-  <button class='bthregister'>注册</button> 
+<view class='userinfo' wx:if="{{userInfo.nickName != undefined}}">
+  <view class='userface-acc'>
+    <image src='{{userInfo.avatarUrl}}' class="userface" ></image>
+     <text class='accountinfo' bindtap='accountInfo'>账号资料</text>
+  </view>
+  <view class='nickname-age-level'><text class='nickname'>{{userInfo.nickName}}</text></view>
+  <view class='follow-fans'>
+    <text>777<text style='color:#757575'>关注</text></text>
+    <text>777<text style='color:#757575'>粉丝</text></text>
+  </view>
+</view>
+<view class='tab' wx:if="{{userInfo.nickName != undefined}}">
+  <view class='tabbtn'  wx:for='{{btnList}}' wx:for-index="idx" wx:for-item="btnItem" wx:key="{{index}}">
+    <text class='btntext' class='{{idx==btnidex?"btntext-hover":""}}' data-btn="{{idx}}" bindtap='ontabbtn'>{{btnItem.btnName}}</text>
+  </view>
+</view>
+<view class='record' wx:if="{{userInfo.nickName != undefined}}">
+    <image class="notrecordimg" src='http://s1.hdslb.com/bfs/static/mult/images/noContent.png'></image>
+    <view>{{btnidex==0?'你还没有历史记录':'你还没有投过稿'}}</view>
+    <view>快去发现<text style='color:#fb7299'>新内容</text>吧！</view>
+</view>
+  <button class='bthlogin' wx:if="{{userInfo.nickName == undefined}}" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">登录</button>
+  <button wx:if="{{userInfo.nickName == undefined}}" class='bthregister'>注册</button> 
 </view>

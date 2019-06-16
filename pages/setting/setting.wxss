@@ -1,0 +1,26 @@
+/* pages/setting/setting.wxss */
+.cell-box{
+  margin-top:30rpx; 
+}
+.cell-box .cell{
+  border-top:1rpx solid rgba(0, 0,0,0.2); 
+  padding:15rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size:30rpx;
+
+}
+.cell-bottom{
+  border-bottom:1rpx solid rgba(0, 0,0,0.2); 
+}
+.userface{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius:50%; 
+}
+.facetilte{
+  margin-top:20rpx; 
+}
+.btn-div{
+  margin: 20rpx;
+}
