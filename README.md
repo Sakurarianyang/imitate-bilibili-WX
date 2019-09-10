@@ -16,7 +16,6 @@
 
 ### 样式
 
-![index](https://github.com/Sakurarianyang/imitate-bilibili-WX/blob/master/1.jpg)![2](https://github.com/Sakurarianyang/imitate-bilibili-WX/blob/master/1.jpg)
+![index](https://github.com/Sakurarianyang/imitate-bilibili-WX/blob/master/1.jpg)![2](https://github.com/Sakurarianyang/imitate-bilibili-WX/blob/master/2.jpg)
 
 ​	
-
