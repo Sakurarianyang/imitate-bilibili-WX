@@ -16,4 +16,7 @@
 
 ### 样式
 
-![index](.\1.jpg)![2](.\2.jpg)
+![index](https://github.com/Sakurarianyang/imitate-bilibili-WX/blob/master/1.jpg)![2](https://github.com/Sakurarianyang/imitate-bilibili-WX/blob/master/1.jpg)
+
+​	
+
