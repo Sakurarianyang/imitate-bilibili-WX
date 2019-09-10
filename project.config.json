@@ -14,11 +14,13 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
 	"appid": "wx0a8769229c2007c5",
-	"projectname": "imitate-bilibili-WX",
+	"projectname": "",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

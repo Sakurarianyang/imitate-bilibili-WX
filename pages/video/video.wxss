@@ -83,9 +83,13 @@ page {
 }
 .gn-fenxiang{
   display: inline-block;
+  border: 0;
   color: rgb(153, 153,153);
   margin: 0;
   font-size: 27rpx;
   height: 52rpx;
   line-height:1.7;
+}
+button::after{
+  border: 0
 }

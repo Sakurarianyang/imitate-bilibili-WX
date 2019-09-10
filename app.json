@@ -1,29 +1,28 @@
 {
-  "pages":[
-    "pages/user/user",
+  "pages": [
     "pages/index/index",
+    "pages/user/user",
     "pages/video/video",
-    
     "pages/inchannel/inchannel",
     "pages/channel/channel",
     "pages/search/search",
     "pages/setting/setting"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fb7299",
     "navigationBarTitleText": "哔哩哔哩 BiliBili",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   },
-  "tabBar":{
+  "tabBar": {
     "color": "#666666",
     "selectedColor": "#fb7299",
-    "list":[
+    "list": [
       {
-        "pagePath":"pages/index/index",
-        "text":"首页",
-        "iconPath":"images/icon/index.png",
-        "selectedIconPath":"images/icon/s-index.png"
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/index.png",
+        "selectedIconPath": "images/icon/s-index.png"
       },
       {
         "pagePath": "pages/channel/channel",
@@ -39,5 +38,6 @@
       }
     ]
   },
-  "debug":false
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
 }
