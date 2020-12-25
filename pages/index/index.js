@@ -108,26 +108,6 @@ Page({
       url: "/pages/search/search",
     });
   },
-  changeIndicatorDots(e) {
-    this.setData({
-      indicatorDots: !this.data.indicatorDots,
-    });
-  },
-  changeAutoplay(e) {
-    this.setData({
-      autoplay: !this.data.autoplay,
-    });
-  },
-  intervalChange(e) {
-    this.setData({
-      interval: e.detail.value,
-    });
-  },
-  durationChange(e) {
-    this.setData({
-      duration: e.detail.value,
-    });
-  },
   tovideo: function (e) {
     var videoobj = e.currentTarget.dataset.video;
     wx.navigateTo({

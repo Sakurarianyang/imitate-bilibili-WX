@@ -11,7 +11,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fb7299",
-    "navigationBarTitleText": "哔哩哔哩 BiliBili",
+    "navigationBarTitleText": "仿哔哩哔哩 BiliBili",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
@@ -38,6 +38,7 @@
       }
     ]
   },
+  "style": "v2",
   "debug": false,
   "sitemapLocation": "sitemap.json"
 }
