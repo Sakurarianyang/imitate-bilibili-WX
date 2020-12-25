@@ -1,51 +1,34 @@
 // pages/search/search.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    EbSearch:[
-      '背对背拥抱',
-      '醉赤壁',
-      'Always Online', 
-      '因你而在',
-      '我还想他',
-    ],
-    HSearch:[
-      '背对背拥抱',
-      '醉赤壁',
-      'Always Online',
-      '因你而在',
-      '我还想他'
-    ],
+    EbSearch: ["背对背拥抱", "醉赤壁", "Always Online", "因你而在", "我还想他"],
+    HSearch: ["背对背拥抱", "醉赤壁", "因你而在", "我还想他"],
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-  oncancel:function(){
+  oncancel: function () {
     wx.navigateBack({ changed: true });
   },
-  onbtnsh:function(e){
-    this.data.HSearch.push(e.currentTarget.dataset.item);
-    this.setData({
-      HSearch: this.data.HSearch
-    })
+  onbtnsh: function (e) {
+    const { item } = e.currentTarget.dataset;
+    this.commonHandle(item);
   },
-  onempty:function(){
+  onSearchConfirm(e) {
+    const { value } = e.detail;
+    this.commonHandle(value);
+  },
+  commonHandle(value) {
+    const { HSearch } = this.data;
+    HSearch.unshift(value);
+    const newSearch = [...new Set(HSearch)];
+    if (newSearch.length > 12) {
+      newSearch.pop();
+    }
     this.setData({
-      HSearch: []
-    })
-  }
-})
+      HSearch: newSearch,
+    });
+  },
+  onempty: function () {
+    this.setData({
+      HSearch: [],
+    });
+  },
+});

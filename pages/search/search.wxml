@@ -1,6 +1,6 @@
 <view>
   <view class="search">
-    <input placeholder=" 搜索视频、番剧、UP主或AV号" auto-focus class='searchkuang' confirm-type="search" cursor="3"/>
+    <input placeholder=" 搜索视频、番剧、UP主或AV号" auto-focus class='searchkuang' confirm-type="search" cursor="3" bindconfirm="onSearchConfirm"/>
     <view class='cancel' bindtap='oncancel'>取消</view>
   </view>
   <view class='ebsearch'>

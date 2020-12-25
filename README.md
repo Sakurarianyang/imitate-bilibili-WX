@@ -1,12 +1,17 @@
 # imitate-bilibli-WX
 
-> 已烂尾
+> 重新支棱起来，至少 1.5 月一更新代码一次
 
 ### 版本
 
+- 2020.12.260112
+
+  - 优惠 search 方法
+
 - 1.0.2
+
   - 微信授权，获取用户。
-  - 我的页面完善80%
+  - 我的页面完善 80%
 
 - 1.0.1
   - 首页页面
@@ -18,4 +23,4 @@
 
 ![index](https://github.com/Sakurarianyang/imitate-bilibili-WX/blob/master/1.jpg)![2](https://github.com/Sakurarianyang/imitate-bilibili-WX/blob/master/2.jpg)
 
-​	
+​
